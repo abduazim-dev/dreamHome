@@ -1,0 +1,156 @@
+.popular-residences {
+  padding: 6rem 0;
+  background: white;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bedroom-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #E8D5C4;
+  background: white;
+  color: #4a4a4a;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #1a1a1a;
+}
+
+.filter-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+.reset-btn {
+  padding: 0.8rem 2rem;
+  background: #E8D5C4;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #d4c2b1;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #FAFAFA;
+  border-radius: 16px;
+}
+
+.no-results h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.residences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.residence-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.residence-card:hover {
+  transform: translateY(-8px);
+}
+
+.residence-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.residence-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sign-up-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: #1a1a1a;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.residence-info {
+  padding: 1.5rem;
+}
+
+.residence-location {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.residence-details {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.residence-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+@media (max-width: 1024px) {
+  .residences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .residences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error{
+  text-align: center;
+  font-size: 30px;
+  grid-column: 1 / -1;
+  color: red;
+}
