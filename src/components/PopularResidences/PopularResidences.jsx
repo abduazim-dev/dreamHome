@@ -6,7 +6,7 @@ const PopularResidences = () => {
   const [data, database] = useState([]),
     [loading, setLoading] = useState(true),
     [error,setError]=useState(false)
-  function fatch() {
+  function malumot() {
     setLoading(true)
     fetch("https://698da84cb79d1c928ed612d8.mockapi.io/residences")
       .then(res => {
@@ -19,7 +19,7 @@ const PopularResidences = () => {
         setError(true)
       })
   }
-  useEffect(() => { fatch() }, [])
+  useEffect(() => { malumot() }, [])
   return (
     <section className="popular-residences">
       <div className="container">
